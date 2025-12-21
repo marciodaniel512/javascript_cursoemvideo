@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <link rel="stylesheet" href="css/ex005.css">
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="mensagem" name="nome">Clique em mim</div>
+
+    <script>
+        /*
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var d = window.document.getElementById('mensagem')
+        
+        /*
+        window.document.write('Está escrito assim: ' + p1.innerText)
+
+        d.style.background = 'green'
+        document.getElementById('mensagem').innerHTML = 'Aprendendo a fazer o uso do DOM'
+
+        corpo.style.background = 'green'
+        
+        window.document.getElementsByTagName('nome')[0]
+        d.innerText = 'Olá, mundão'*/
+        var d = window.document.body.querySelector('div#mensagem').style.background = 'yellow'
+    </script>
+</body>
+</html>
