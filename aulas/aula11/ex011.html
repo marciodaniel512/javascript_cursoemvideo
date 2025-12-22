@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <link rel="stylesheet" href="css/ex011.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Verificador de cidadania</legend>
+            <label for="id_nacionalidade">Digite a sua nacionalidade: </label><input type="text" id="id_nacionalidade" name="n_nacionalidade" required>
+            <input type="submit" value="Verficar" onclick="verificar()">
+        </fieldset>
+
+        <script>
+            function verificar(){
+                var nacionalidade = window.document.querySelector('input#id_nacionalidade').value
+
+                if(nacionalidade == 'Angola'){
+                    alert('És um cidadão nacional de Angola')
+                } else{
+                    alert('És um cidadão estrangeiro')
+                }
+            }
+        </script>
+    </form>
+</body>
+</html>
