@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos em DOM</title>
+    <link rel="stylesheet" href="css/ex006.css">
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+
+    <script>
+        var funcao = window.document.querySelector('div#area')
+        /*
+        addEventListener  serve para fazermos a ligação do HTML e o JavaScript pelo código JavaScript evitando manter o nosso HTML poluído com o código JavaScript.
+        
+        Nota: fazemos a relação evento JavaScript e nome da função dentro dos parenteses, sem o on antecedendo ao nome, e sem parenteses no nome das funções
+        */
+        funcao.addEventListener('mouseenter', entrar)
+        funcao.addEventListener('click', clicar)
+        funcao.addEventListener('mouseout', sair)
+
+        function entrar(){
+            window.document.querySelector('div#area').innerText = 'Entrou'
+            window.document.querySelector('div#area').style.background = 'white'
+            window.document.querySelector('div#area').style.color = 'black'
+            window.document.querySelector('div#area').style.border = '1px solid black'
+        }
+
+        function clicar(){
+            window.document.querySelector('div#area').innerText = 'Clicou'
+            window.document.querySelector('div#area').style.background = 'green'
+            window.document.querySelector('div#area').style.color = 'white'
+            
+        }
+        
+        function sair(){
+            window.document.querySelector('div#area').innerText = 'Saiu' 
+            window.document.querySelector('div#area').style.background = 'black'
+            window.document.querySelector('div#area').style.color = 'white'            
+        }
+
+    </script>
+</body>
+</html>
