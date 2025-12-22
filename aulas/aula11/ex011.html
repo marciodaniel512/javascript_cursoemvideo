@@ -21,7 +21,11 @@
                 if(nacionalidade == 'Angola'){
                     alert('És um cidadão nacional de Angola')
                 } else{
-                    alert('És um cidadão estrangeiro')
+                    if(nacionalidade == ''){
+                        alert('Campo vazio, digite a sua nacionalidade')
+                    } else{
+                        alert('És um cidadão estrangeiro')
+                    }
                 }
             }
         </script>
