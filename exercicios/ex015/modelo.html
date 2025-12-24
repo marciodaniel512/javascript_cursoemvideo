@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="css/modelo.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+
+    <section>
+        <div>
+            <form>
+                <label for="id_ano">Ano de Nascimento: </label><input type="number" id="id_ano" name="n_ano" required><br>
+                
+                <label>Sexo: </label>
+                <input type="radio" name="n_sexo" id="id_masculino" value="M"><label for="id_masculino">Masculino</label>
+                
+                <input type="radio" name="n_sexo" id="id_feminino" value="F"><label for="id_feminino">Feminino</label><br>
+
+                <input type="submit" value="Verificar" id="id_verficar" name="n_verficar" onclick="verificar()">
+            </form>
+        </div>
+        
+        <div id="foto">
+            Preencha os dados acima para ver o resultado!
+            <img id="foto-genero" alt="Representação do género por imagem">
+        </div>
+    </section>
+    
+    <footer>
+        &copy; <a href="https://github.com/marciodaniel512" target="https://github.com/marciodaniel512"> mmgd_perverso</a>
+    </footer>
+
+    <script src="js/modelo.js"></script>
+</body>
+</html>
