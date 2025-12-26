@@ -20,6 +20,9 @@ section{
     box-shadow: 5px 5x 10px rgba(0, 0, 0, 0.364);
 }
 
+input#id_verificar{
+    padding: 10px;
+}
 
 footer, a{
     color: white;
