@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="css/modelo.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+
+    <section>
+        <div id="dados">
+            <form>
+                <p>
+                    <label for="id_inicio">Início: </label>
+                    <input type="number" id="id_inicio" name="n_inicio">
+                </p>
+                <p>
+                    <label for="id_fim">Fim: </label>
+                    <input type="number" id="id_fim" name="n_fim">
+                </p>
+                <p>
+                    <label for="id_passo">Passo: </label>
+                    <input type="number" id="id_passo" name="n_passo">
+                </p>
+                <p>
+                    <input type="button" value="Contar" id="id_contar" name="n_contar" onclick="contar()">
+                </p>
+            </form>
+        </div>
+        
+        <div id="resultado">
+            Preparando contagem...
+        </div>
+    </section>
+    
+    <footer>
+        &copy; <a href="https://github.com/marciodaniel512" target="_blank"> mmgd_perverso</a>
+    </footer>
+
+    <script src="js/ex016.js"></script>
+</body>
+</html>
