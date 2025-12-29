@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="css/tabuada.css">
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+
+    <section>
+        <div>
+            <form>
+                <p>
+                    <label for="id_numero">Número: </label>
+                    <input type="number" name="n_numero" id="id_numero" required>
+                    <input type="button" value="Gerar tabuada" name="n_gerar" id="id_gerar" onclick="gerar()">
+                </p>
+            </form>
+        </div>
+        
+        <div id="id_resultado">
+            <select name="n_tabuada" id="id_tabuada" size="12">
+                <option value=""></option>
+            </select>
+        </div>
+    </section>
+    
+    <footer>
+        &copy; <a href="https://github.com/marciodaniel512" target="_blank"> mmgd_perverso</a>
+    </footer>
+
+    <script src="js/tabuada.js"></script>
+</body>
+</html>
