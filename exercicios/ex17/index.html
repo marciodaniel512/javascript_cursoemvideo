@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="css/ex017.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de Número</h1>
+    </header>
+
+    <section>
+        <div>
+            <form>
+                <p>
+                    <label for="id_numero">Digite um número: </label>
+                    <input type="number" name="n_numero" id="id_numero">
+                    <input type="button" value="Adicionar" name="n_botao" id="id_botao" onclick="adicionar()">
+                </p>
+                <p>
+                    <select name="n_tabela" id="id_tabela" size="10" style="width: 500px;"></select><br>
+                    <input type="button" value="Finalizar" name="n_finalizar" id="id_finalizar" style="width: 500px; height: 40px; margin-top: 15px; margin-bottom: -10px;" onclick="finalizar()">
+                </p>
+            </form>
+        </div>
+        
+        <div id="id_resposta">
+            <p>
+                Ao todos,  temos <strong>0</strong> números cadastrados <br>
+                O maior valor informado foi <strong>0</strong> <br>
+                O menor valor informado foi <strong>0</strong> <br>
+                Somando todos os valores, temos <strong>0</strong> <br>
+                A média dos valores digitados é <strong>0</strong>
+            </p>
+        </div>
+    </section>
+    
+    <footer>
+        &copy; <a href="https://github.com/marciodaniel512" target="https://github.com/marciodaniel512"> mmgd_perverso</a>
+    </footer>
+
+    <script src="js/ex017.js"></script>
+</body>
+</html>
