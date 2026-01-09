@@ -18,7 +18,7 @@
             function calcular(){
                 var velocidade = Number(window.document.querySelector('input#id_velocidade').value)
 
-                var resultado = window.document.querySelector('div#id_resultado').innerHTML = `Sua velocidade atual é ${velocidade}`
+                var resultado = window.document.querySelector('div#id_resultado').innerHTML = `Sua velocidade atual é ${velocidade}km/h`
                 
                 if(velocidade > 120){
                     alert(`Você excedeu o limite de velocidade em ${velocidade - 120}km/h. MULTADO!`)
